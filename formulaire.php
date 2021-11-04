@@ -79,6 +79,8 @@
             echo "Votre nom est stocké dans une variable \$name dont le type est ".gettype($name).'<br>';
             echo "Votre ville est stocké dans une variable \$city dont le type est ".gettype($city).'<br>';
         */
+
+        //! Salut !
     ?>
 </body>
 
