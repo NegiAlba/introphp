@@ -23,7 +23,7 @@ echo '</pre>';
 //! Manipulation arrays
 
 //? Ajout d'éléments dans un array indexé
-//* Il est recommandé de passer par la fonction array_push pour les array indexés, car les index sont chiffrés plutôt que nommés.
+//* Il est recommandé de passer par la fonction array_push pour les array indexés, car les index sont chiffrés plutôt que nommés l'index est automatiquement inférée.
 
 //* Ajout via raccourci (ajout à la fin)
 $fruits[] = "noix de coco";
