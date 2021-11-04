@@ -46,7 +46,7 @@ for ($i = 10; $i > 0; $i--) {
 
 echo "Solution boucle Do-While <br>";
 //? SOLUTION : DO-WHILE
-$nombredo = 0;
+$nombredo = 15;
 do {
     if ($nombredo != 0) {
 
