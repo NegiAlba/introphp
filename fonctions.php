@@ -26,6 +26,23 @@ function somme($nombre1, $nombre2)
     return $nombre1 + $nombre2;
 }
 
+function square($n)
+{
+    // return pow($n,2);
+    // return $n ** 2;
+    return $n * $n;
+}
+
+$array = [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024];
+
+//* Array map, permet d'appliquer une fonction sur TOUS les éléments d'un tableau.
+
+$squareArray = array_map('square', $array);
+
+echo '<pre>';
+print_r($squareArray);
+echo '</pre>';
+
 echo bonjour();
 echo bonjourPrenom("Hani");
 echo bonjourPrenom("Paul");
