@@ -55,3 +55,35 @@ print_r($recettes);
 echo '</pre>';
 
 //! Parcourir un tableau : boucles
+
+//* Foreach est identique sur les arrays indexés et associatifs,à peu de choses près
+foreach ($fruits as $fruit) {
+    echo "Je suis $fruit <br>";
+}
+
+//* Ici on peut utiliser la clé pour renseigner des infos plus précises
+foreach ($recettes as $nom => $ingredients) {
+    echo "Pour faire $nom, on a besoin de $ingredients <br>";
+}
+
+//* Mais on peut aussi omettre la clé si ce n'est pas important
+foreach ($recettes as $ingredients) {
+    echo "Pour réaliser la recette on aura besoin de $ingredients <br>";
+}
+
+//! Recherche d'infos dans un tableau.
+
+//? Aucune de ces méthodes n'affiche de résultat. Il s'agit d'action et de comparaisons et sont utiles dans des condtions la plupart du temps.
+//* Exemple : if(in_array("aa",$array)){}
+
+//* Vérifier qu'une clé existe dans un array
+array_key_exists("nom", $recettes); //true
+array_key_exists(5, $fruits); //true
+
+//* Vérifier qu'une valeur existe dans un array (sans retourner cette valeur)
+in_array("Blanquette, Veau, Riz, Carottes", $recettes); //true
+in_array("clémentine", $fruits); //true
+
+//* Récupérer directement la clé d'une valeur dans un array
+array_search("pomme", $fruits); //0
+array_search("Jus de citron", $recettes); //false
