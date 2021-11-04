@@ -44,5 +44,13 @@ for ($i = 10; $i > 0; $i--) {
     echo $i . ' au carré c\'est ' . pow($i, 2) . '<br>';
 }
 
+echo "Solution boucle Do-While <br>";
 //? SOLUTION : DO-WHILE
-$nombredo = 15;
+$nombredo = 0;
+do {
+    if ($nombredo != 0) {
+
+        echo $nombredo . ' au carré c\'est ' . pow($nombredo, 2) . '<br>';
+        $nombredo--;
+    }
+} while ($nombredo > 0);
