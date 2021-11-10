@@ -1,5 +1,7 @@
 <?php
 
+include '_titre.php';
+
 //! Les conditions en PHP
 $name = "Christophe";
 $age = 17;
